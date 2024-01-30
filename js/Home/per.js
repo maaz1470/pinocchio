@@ -63,7 +63,7 @@ window.onload = function () {
             additionalMarginTop: 80
         
         });
-    },3100)
+    },3200)
 
     setTimeout(() => {
 
