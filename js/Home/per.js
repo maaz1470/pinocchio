@@ -1,12 +1,8 @@
 
 window.onload = function () {
 
-    $.cookieBar({
-
-        fixed: true
-
-    });
     
+
     setTimeout(() => {
         // Sticky Sidebar JS Load Here
         const stickySidebar = document.createElement('script')
