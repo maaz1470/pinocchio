@@ -41,6 +41,13 @@ window.onload = function () {
         })();
 
 
+
+        // Sticky Sidebar JS Load Here
+        // const common_script = document.createElement('script')
+        // common_script.src = 'js/common_scripts_min.js';
+        // document.body.appendChild(common_script);
+
+
     }, 3000);
 
 
