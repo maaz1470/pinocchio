@@ -1,4 +1,4 @@
-const loader = document.getElementById('preloader')
+
 window.onload = function () {
 
 
@@ -66,6 +66,13 @@ window.onload = function () {
         gFont.href = 'https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap';
         document.head.appendChild(gFont);
 
+
+
+        // Cookie Js Load Here
+        const cookie = document.createElement('script')
+        cookie.src = 'js/jquery.cookiebar.js';
+        document.body.appendChild(cookie)
+
     }, 4000)
 
 
@@ -87,10 +94,6 @@ window.onload = function () {
 
         gtag('config', 'UA-17468101-1');
 
-        // Cookie Js Load Here
-        const cookie = document.createElement('script')
-        cookie.src = 'js/jquery.cookiebar.js';
-        document.body.appendChild(cookie)
 
             
 
