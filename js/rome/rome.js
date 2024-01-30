@@ -48,7 +48,7 @@ window.onload = function () {
         // document.body.appendChild(common_script);
 
 
-    }, 3000);
+    }, 4500);
 
 
     setTimeout(() => {
@@ -63,7 +63,7 @@ window.onload = function () {
             additionalMarginTop: 80
         
         });
-    },3200)
+    },4700)
 
     setTimeout(() => {
 
@@ -81,7 +81,7 @@ window.onload = function () {
         cookie.src = 'js/jquery.cookiebar.js';
         document.body.appendChild(cookie)
 
-    }, 4000)
+    }, 5000)
 
 
     setTimeout(() => {
