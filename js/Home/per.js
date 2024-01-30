@@ -1,7 +1,12 @@
 
 window.onload = function () {
 
+    $.cookieBar({
 
+        fixed: true
+
+    });
+    
     setTimeout(() => {
         // Sticky Sidebar JS Load Here
         const stickySidebar = document.createElement('script')
@@ -102,11 +107,7 @@ window.onload = function () {
     }, 5000)
 
     setTimeout(() => {
-        $.cookieBar({
-
-            fixed: true
-
-        });
+        
 
 
         const recaptcha = document.createElement('script')
