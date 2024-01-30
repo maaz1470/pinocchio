@@ -104,5 +104,10 @@ window.onload = function () {
             fixed: true
 
         });
+
+
+        const recaptcha = document.createElement('script')
+        recaptcha.src = 'https://www.google.com/recaptcha/api.js'
+        document.body.appendChild(recaptcha)
     },5100)
 };
