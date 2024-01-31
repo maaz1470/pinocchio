@@ -423,24 +423,11 @@ a{color:#e14d67;text-decoration:none;-webkit-transition:all .2s ease;transition:
     <script defer src="js/common_scripts_min.js"></script>
   <script defer src="js/functions.js"></script>
   
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  /* <script src="https://www.google.com/recaptcha/api.js" async defer></script> */
     <!-- Specific scripts -->
     <script src="assets/validate.js"></script>
-    <script src="js/map_contact.js"></script>
-    <script src="js/infobox.js"></script>
-    <script>
-      $(document).ready(function() {
-        $(".btn_1").click(function(e) {
-          console.log(grecaptcha.getResponse());
-          if (grecaptcha.getResponse() == "") {
-            e.preventDefault();
-            alert("Please fill all fields correctly. ");
-          } else {
-            //alert("Thank you");
-          }
-        });
-      });
-    </script>
+    /* <script src=""></script> */
+    /* <script src="js/infobox.js"></script> */
   <!-- GetButton.io widget -->
   <script>
     $.cookieBar({

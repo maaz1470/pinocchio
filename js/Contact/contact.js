@@ -69,6 +69,16 @@ window.onload = function () {
 
     setTimeout(() => {
 
+        // Info Box Load Here
+        const infoBox  = document.createElement('script')
+        infoBox.src = 'js/infobox.js'
+        document.body.appendChild(infoBox)
+
+        // Map Contact JS Load here
+        const map_contact = document.createElement('script')
+        map_contact.src = 'js/map_contact.js';
+        document.body.appendChild(map_contact)
+
         
         // Google Font Load
         var gFont = document.createElement('link');
@@ -78,6 +88,10 @@ window.onload = function () {
 
 
 
+        // Cookie Js Load Here
+        // const cookie = document.createElement('script')
+        // cookie.src = 'js/jquery.cookiebar.js';
+        // document.body.appendChild(cookie)
 
     }, 4000)
 
@@ -107,4 +121,27 @@ window.onload = function () {
         !function (e, t, n) { var s, o = e.getElementsByTagName(t)[0]; e.getElementById(n) || ((s = e.createElement(t)).id = n, s.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1365407963556488", s.setAttribute('defer', null), o.parentNode.insertBefore(s, o)) }(document, "script", "facebook-jssdk")
     }, 5000)
 
+    setTimeout(() => {
+        
+
+
+        const recaptcha = document.createElement('script')
+        recaptcha.src = 'https://www.google.com/recaptcha/api.js'
+        document.body.appendChild(recaptcha)
+    },5100)
+
+
+    setTimeout(() => {
+        $(document).ready(function() {
+            $(".btn_1").click(function(e) {
+              console.log(grecaptcha.getResponse());
+              if (grecaptcha.getResponse() == "") {
+                e.preventDefault();
+                alert("Please fill all fields correctly. ");
+              } else {
+                //alert("Thank you");
+              }
+            });
+          });
+    }, 5300)
 };
