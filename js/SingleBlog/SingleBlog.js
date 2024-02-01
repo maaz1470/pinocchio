@@ -132,9 +132,21 @@ window.onload = function () {
     setTimeout(() => {
         
 
-
+        // Recaptcha JS Load Here
         const recaptcha = document.createElement('script')
         recaptcha.src = 'https://www.google.com/recaptcha/api.js'
         document.body.appendChild(recaptcha)
+
+        // Map API JS Load Here
+        const map_js = document.createElement('script')
+        map_js.src = 'https://maps.googleapis.com/maps/api/js'
+        document.body.appendChild(map_js)
+
     },5100)
+
+    setTimeout(() => {
+        const mapjs = document.createElement('script')
+        mapjs.src = 'js/map.js'
+        document.body.appendChild(mapjs)
+    }, 5200)
 };
