@@ -390,7 +390,7 @@ function MM_validateForm() { //v4.0
 
 
 
-            <a href="https://pinocchiotours.com"><img id="logo-header" src="../img/logo_sticky.png" alt="Pinocchio Tours Logo"></a>
+            <a href="https://pinocchiotours.com"><img id="logo-header" src="../img/logo_sticky.webp" alt="Pinocchio Tours Logo"></a>
 
 
 
