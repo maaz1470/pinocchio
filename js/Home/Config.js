@@ -34,6 +34,11 @@ window.onload = function () {
         sticky_sidebar.src = 'js/theia-sticky-sidebar.js';
         body.appendChild(sticky_sidebar)
 
+        // Map API JS Load Here
+        const map_js = document.createElement('script')
+        map_js.src = 'https://maps.googleapis.com/maps/api/js'
+        document.body.appendChild(map_js)
+
 
 
 
@@ -62,6 +67,11 @@ window.onload = function () {
             jQuery('.right-imgbox').theiaStickySidebar({
                 additionalMarginTop: 80
             });
+
+
+            const mapjs = document.createElement('script')
+            mapjs.src = 'js/map.js'
+            document.body.appendChild(mapjs)
         }, 1000)
     }
 
@@ -110,7 +120,7 @@ window.onload = function () {
 
 
         const google_font = document.createElement('link')
-        google_font.href='https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap'
+        google_font.href = 'https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap'
         google_font.rel = 'stylesheet'
         head.appendChild(google_font)
     }, 6000)
